@@ -94,7 +94,7 @@ a:hover {
 /*Req 5*/
 .container{
   display: grid;
-  grid-template-columns: 1fr 3fr 3fr 1fr;
+  grid-template-columns:1fr 3fr 3fr 1fr;
   grid-template-rows: auto;
   grid-row-gap: 20px;
 
@@ -125,9 +125,8 @@ header{
  
 /*Req 8a, 8b, and 8c*/
 .about-image, .method-image, .client-image, .contact-image{
- grid-column: 1 / span all;
+ column-span: all;
  max-height: 650px; 
- max-width:100%;
  overflow: hidden;
     
 
@@ -162,7 +161,7 @@ header{
   border: 10px solid black;
   padding: 30px;
   /*Your code here:*/
-  align-content: center;
+  text-align: center;
 
 }
 
